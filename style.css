@@ -45,6 +45,7 @@
     background-color: lightsalmon;
     grid-area: info-bar;
     font-size: 0.8rem;
+    padding: 1rem;
 }
 
 /* styles for Sidebar area */
@@ -73,6 +74,10 @@ ul li {
 
 #dashboard {
     font-size: 2rem;
+}
+
+.sb-menu {
+    margin-bottom: 2rem;
 }
 
 /* style for Nav-A (top header) */ 
@@ -179,4 +184,54 @@ ul li {
     font-size: 0.65rem;
     font-weight: bold;
     margin-right: 10px;
+}
+
+/* style for projects (main) */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;    
+    border-radius: 0.5rem;    
+    display: grid;
+    grid-template-columns: 0.75rem 1fr;    
+}
+
+.card-color {
+    background-color: #FFDB58;
+    grid-column: 1 / 2;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card-text {
+    grid-column: 2 / 3;
+    padding: 0.8rem;
+    font-size: 0.75rem;
+}
+
+.card .title {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+/* style for info-bar (Announcement) */
+
+.announcement {
+    background-color: lightyellow;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+/* for border-bottom, only apply it to the first 2 items */ 
+.each-ann {
+    background-color: lightpink;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid darkgrey;
 }
