@@ -230,6 +230,7 @@ ul li {
 
 .card .title {
     font-weight: bold;
+    font-size: 0.85rem;
     margin-bottom: 0.2rem;
 }
 
@@ -271,7 +272,7 @@ ul li {
 .each-ann {
     background-color: var(--white);
     padding-bottom: 1rem;
-    font-size: 0.75rem;   
+    font-size: 0.65rem;   
 }
 
 /* separator line between each announcement */ 
